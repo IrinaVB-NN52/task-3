@@ -113,7 +113,7 @@ namespace Задача_3
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog .Filter =  "Текстовые файлы (*.txt)|*.txt|Все файлы (*.*)|*.*";
+            saveFileDialog.Filter =  "Текстовые файлы (*.txt)|*.txt|Все файлы (*.*)|*.*";
             if (saveFileDialog .ShowDialog ()==true )
             {
                 File.WriteAllText(saveFileDialog.FileName, textBox.Text);
