@@ -32,31 +32,33 @@
             
             <ToolBar >
 
-            <ComboBox Margin=" 5" Padding=" 5" SelectedIndex=" 0" Width=" 200" SelectionChanged="ComboBox_SelectionChanged">
-                    <TextBlock Text=" Arial"/>
-                    <TextBlock Text=" Times New Roman"/>
-                    <TextBlock Text=" Verdana"/>
-                 </ComboBox>
-                 <ComboBox Margin=" 5" Padding=" 5" SelectedIndex=" 2" Width=" 50" SelectionChanged="ComboBox_SelectionChanged_1">
-                     <TextBlock Text="12"/>
-                     <TextBlock Text="14"/>
-                     <TextBlock Text="16"/>
-                 </ComboBox>
-             </ToolBar>
-               <ToolBar  Margin=" 5" Padding=" 5">
-                <ToggleButton Click="Button_Click" IsChecked="False" >
-                    <Image Source=" Data/text_bold.png"/>
-                </ToggleButton>
-                <Separator/>
-                <ToggleButton Click="Button_Click_1" IsChecked="False">
-                    <Image Source=" Data/text_italic.png"/>
-                </ToggleButton>
-                <Separator/>
-                <ToggleButton Click="Button_Click_2" IsChecked="False">
-                    <Image Source=" Data/text_underline.png"/>
-                </ToggleButton>
-                <Separator/>
+                    <ComboBox Margin=" 5"
+                        Padding=" 5" 
+                        SelectedIndex=" 0" 
+                        Width=" 200" 
+                        SelectionChanged="ComboBox_SelectionChanged"
+                        ItemsSource="{StaticResource fonts}"/>
+                    <ComboBox Margin=" 5" 
+                           Padding=" 5" 
+                           SelectedIndex=" 2"
+                           Width=" 50" 
+                           SelectionChanged="ComboBox_SelectionChanged_1"
+                           ItemsSource="{StaticResource sizes}"/>
             </ToolBar>
+               <ToolBar  Margin=" 5" Padding=" 5">
+                   <ToggleButton Click="Button_Click" IsChecked="False" >
+                        <Image Source=" Data/text_bold.png"/>
+                    </ToggleButton>
+                       <Separator/>
+                    <ToggleButton Click="Button_Click_1" IsChecked="False">
+                        <Image Source=" Data/text_italic.png"/>
+                    </ToggleButton>
+                      <Separator/>
+                  <ToggleButton Click="Button_Click_2" IsChecked="False">
+                        <Image Source=" Data/text_underline.png"/>
+                  </ToggleButton>
+                     <Separator/>
+               </ToolBar>
             <ToolBar  Margin=" 5" Padding=" 5">
                 <StackPanel VerticalAlignment="Center" >
                     <RadioButton Content=" Черный" IsChecked="True" Checked="RadioButton_Checked" />
